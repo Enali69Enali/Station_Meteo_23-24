@@ -1,0 +1,14 @@
+Pour cette séance, j'ai choisi le photorécepteur et la diode pour la girouette:
+Photorécepteur: https://fr.rs-online.com/web/p/phototransistors/6655390
+Nous allons utiliser un phototransistor au lieu d'une photodiode car c'est plus sensible à la lumière
+Diode (940 nm): https://fr.rs-online.com/web/p/leds-infrarouges/6997705
+
+Le récepteur a été choisi pour avoir l'angle le plus petit possible (ici 20°) afin de ne pas être parasiter par les autres leds
+
+J'ai aussi commencé à regarder le montage à faire pour utiliser les photorécepteurs.
+En effet, on a pas besoin de mesurer la luminosité, on a seulement besoin de savoir s'il y a un faisceau ou pas.
+D'apres internet, il faut donc utiliser le phototransistor en mode switch.
+De plus internet propose 2 solutions pour le montage à utiliser:
+- émetteur commun (le plus utilisé): lorsqu'il y a de la lumiere, passe de l'etat haut à bas
+- collecteur commun: lorsqu'il y a de la lumière , passe de l'état bas à haut
+Qui seront à utiliser avec le montage R2R pour convertir notre signal en une seule tension qui sera utilisée par l'esp32
