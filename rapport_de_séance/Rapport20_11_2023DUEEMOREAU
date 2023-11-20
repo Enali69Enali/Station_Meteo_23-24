@@ -1,0 +1,11 @@
+Cette séance, il fallait trouver les valeurs des resistances pour le montage R2R
+
+Les phototransistor seront utilises en mode collecteur commun afin de passer du niveau bas au niveau haut en cas de lumiere detectee
+
+Le but est de verifier si nous pouvons utiliser des resistances 100kOhm et 200kOhm pour le reseau R2R de la girouette
+Cependant, je dois effectuer des mesures car nous ne savons pas precisement le courant Ic.
+En effet, celui-ci depend de la luminosite recue (d'apres la datasheet, Ic = 3xIpce et Ipce depend de la luminosite recue)
+Pour se retrouver dans les meme conditions que l'utilisation de la girouette, il faudra plonger le montage dans le noir (en mettant la boite dessus par exemple)
+De plus, d'apres la datasheet de l'ESP32, la courant consomme en entree est de 50nA
+
+(les dessins et schema ont ete fait sur mon cahier mais je ne sais pas comment les mettre ici)
