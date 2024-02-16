@@ -1,0 +1,10 @@
+Pendant cette séance, je devais mesurer la tension de sortie du reseau R2R avec les differentes combinaisons de leds
+allumées/éteintes.
+Cependant, j'ai recontré différents problèmes :
+- le pcb ayant certainement des problèmes de soudure, je devais positionner la carte d'une certaine manière 
+pour pouvoir realiser les mesures
+- une diode ne faisais pas de lumière 
+- vers la fin de séance, nous avons remarqué que la résistance du réseau r2r d'un phototransistors semblaient avoir un problème
+(en sortie d'inverseur on avait ~0 ou ~ 3.3 alors qu'apres la résistance de 100k, nous avions tout le temps ~0
+
+Ce dernier problème sera a étudier a la prochaine séance afin de pouvoir realiser les mesures
