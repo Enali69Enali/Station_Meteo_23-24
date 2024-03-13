@@ -1,20 +1,4 @@
 #define GIROUETTE 36
-
-void setup() {
-  // put your setup code here, to run once:
-  //Serial monitor port
-  Serial.begin(9600);
-  pinMode (GIROUETTE, INPUT);
-  delay(1000);
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-  girouette();
-  delay(1000);
-  
-}
-
 // Version pour le réseau R2R
 // DUEE-MOREAU Arwen & PELLETIER Ilane
 
