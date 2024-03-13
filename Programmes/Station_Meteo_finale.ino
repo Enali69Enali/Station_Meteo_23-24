@@ -42,8 +42,8 @@ Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591);
 
 int compt=0 ;
 float quantiteEau = 0;
-unsigned long startTime_P;  
-unsigned long currentTime_P;
+RTC_DATA_ATTR unsigned long startTime_P = 0;  
+RTC_DATA_ATTR unsigned long currentTime_P = 0;
 const unsigned long period_P = 10000;
 
 float temperature = 0.0;
@@ -97,7 +97,7 @@ void setup() {
   attachInterrupt(PLUVIOMETRE,comptage,FALLING);
   attachInterrupt(ANEMOMETRE,comptageAnemo,FALLING) ; 
   //Variable definition
-  startTime_P = millis();
+  startTime_P = startTime_P + millis();
   lecture_donnee();
   //wakeup
   //Increment boot number and print it every reboot
@@ -128,7 +128,7 @@ void lecture_donnee() {
   delay(100);
   girouette();
   //Toutes les secondes
-  currentTime_P = millis();
+  currentTime_P = currentTime_P + millis();
   if (currentTime_P - startTime_P >= period_P)//test whether the period has elapsed
   { 
     Serial.print("\n-------------------------------------\n");
