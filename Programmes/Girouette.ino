@@ -1,69 +1,87 @@
+#define GIROUETTE 36
+
+void setup() {
+  // put your setup code here, to run once:
+  //Serial monitor port
+  Serial.begin(9600);
+  pinMode (GIROUETTE, INPUT);
+  delay(1000);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  girouette();
+  delay(1000);
+  
+}
+
 // Version pour le réseau R2R
 // DUEE-MOREAU Arwen & PELLETIER Ilane
 
 // Fev 2024
 
-void Girouette() {
+void girouette() {
   // on va prendre un résolution de 12 bits, cela donnera des valeur comprises entre 0 et 4096
 
   int sensorValue = analogRead(GIROUETTE);
+  Serial.print(sensorValue);
   int directionVent;
   if (sensorValue >3840){
     directionVent = 0; // Nord
   }
-  if (sensorValue > 3584 && sensorValue <= 3840){
+  else if (sensorValue > 3584 && sensorValue <= 3840){
     directionVent = 15; // Nord++ - Ouest
   }
 
-  if (sensorValue > 3328 && sensorValue <= 3584){
+  else if (sensorValue > 3328 && sensorValue <= 3584){
     directionVent = 5; // Sud - Est++
   }
 
-  if (sensorValue > 3072 && sensorValue <= 3328){
+  else if (sensorValue > 3072 && sensorValue <= 3328){
     directionVent = 10; // Sud - Oues†
   }
 
-  if (sensorValue > 2816 && sensorValue <= 3072){
+  else if (sensorValue > 2816 && sensorValue <= 3072){
     directionVent = 7; // Sud ++ - Est
   }
 
-  if (sensorValue > 2560 && sensorValue <= 2816){
+  else if (sensorValue > 2560 && sensorValue <= 2816){
     directionVent = 8; // Sud
   }
 
-  if (sensorValue > 2304 && sensorValue <= 2560){
+  else if (sensorValue > 2304 && sensorValue <= 2560){
     directionVent = 6; // Sud - Est
   }
 
-  if (sensorValue > 2048 && sensorValue <= 2304){
+  else if (sensorValue > 2048 && sensorValue <= 2304){
     directionVent = 9; // Sud++ - Ouest
   }
 
-  if (sensorValue > 1792 && sensorValue <= 2048){
+  else if (sensorValue > 1792 && sensorValue <= 2048){
     directionVent = 1; // Nord++ - Est
   }
 
-  if (sensorValue > 1536 && sensorValue <= 1792){
+  else if (sensorValue > 1536 && sensorValue <= 1792){
     directionVent = 14; // Nord - Ouest
   }
 
-  if (sensorValue > 1280 && sensorValue <= 1536){
+  else if (sensorValue > 1280 && sensorValue <= 1536){
     directionVent = 4; // Est
   }
 
-  if (sensorValue > 1024 && sensorValue <= 1280){
+  else if (sensorValue > 1024 && sensorValue <= 1280){
     directionVent = 11; // Sud - Ouest++
   }
 
-  if (sensorValue > 768 && sensorValue <= 1024){
+  else if (sensorValue > 768 && sensorValue <= 1024){
     directionVent = 2; // Nord - Est
   }
 
-  if (sensorValue > 384 && sensorValue <= 768){
+  else if (sensorValue > 384 && sensorValue <= 768){
     directionVent = 13; // Nord - Ouest++
   }
 
-  if (sensorValue > 128 && sensorValue <= 384){
+  else if (sensorValue > 128 && sensorValue <= 384){
     directionVent = 3; // Nord - Est ++
   }
 
@@ -72,7 +90,7 @@ void Girouette() {
   }
   Serial.print("Girouette : ");
   Serial.println(directionVent);
-  ds.donnees_girouette = static_cast<double>(directionVent);
+  //ds.donnees_girouette = static_cast<double>(directionVent);
 
 }
 
