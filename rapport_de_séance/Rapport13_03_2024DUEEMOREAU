@@ -1,0 +1,4 @@
+Durant cette séance, j'ai pu corriger le code de la Girouette.
+J'ai aussi modifié le code de la station météo en général car le programme ne passait jamais à un endroit a cause du deeep sleep (qui remmettait
+les variables a 0)
+
