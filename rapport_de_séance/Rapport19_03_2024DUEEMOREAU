@@ -1,0 +1,11 @@
+Cette séance a servi à corriger le code de la station météo.
+En effet, la station était constamment réveillée par le pluviomètre alors que celui-ci n'était pas branché.
+Il a donc fallu changer pour que le pluviomètre marche sur niveau bas au lieu de haut, la pin étant reliée au vcc.
+Cela à donc permis de ne plus avoir l'esp32 réveillé par le pluviomètre mais par le wakeup normal.
+Après avoir fini, j'ai travaillé sur ces questions pour LoRa:
+comment fonctionnent les entrées / sortie
+fonctionnement en mode sleep
+reception trame, qu'est ce qui se passe si ce module est en mode sleep
+
+Les réponses seront dans un autre dossier
+
