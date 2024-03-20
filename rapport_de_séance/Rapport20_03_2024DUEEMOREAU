@@ -1,0 +1,12 @@
+Durant la séance, nous avons travaillé à 2 sur le code RX/TX d'un autre projet (les codes seront dispo dans un autre dossier que celui de notre projet)
+Concernant le mode sleep de l'ESP32:
+- le deep sleep éteint tout sauf le minimum, il n'est pas possible d'utiliser le rx du bt. le deep sleep éteint a mémoire principale de l'esp32
+- le light sleep met en pause la CPU mais garde la mémoire.
+le light sleep manque d'information, mais si on peut recevoir et réveiller l'esp32 en même temps, alors cela permettrait d'économiser beaucoup d'énergie
+D'après ce site (https://docs.espressif.com/projects/esp-idf/en/v5.0/esp32/api-reference/system/sleep_modes.html#:~:text=ESP32%20contains%20the%20following%20power,their%20supply%20voltage%20is%20reduced.)
+il serait possible de maintenir la réception WiFi/BT alors que l'ESP32 est en light sleep (il faut que le WiFi/BT soit en modem-sleep et l'esp32 en light sleep)
+La documentation à ce sujet est difficile à trouver mais il serait judicieux de faire des tests 
+- le mode normal (ni deep, ni light sleep) permet de recevoir mais consomme beaucoup si constamment allumé
+
+
+
