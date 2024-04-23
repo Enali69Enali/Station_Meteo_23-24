@@ -12,6 +12,7 @@ Ce projet de station météo comporte plusieurs composants tels que:
 - L'humidité
 Mais nous nous concentrons surtout sur la direction du vent avec la girouette. 
 
+Pour voir la présentation du projet en cours, cliquez [ici](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/rapport_de_s%C3%A9ance/Premier%20pr%C3%A9sentation%20%C3%A9lectronique.pdf).
 
 ## Fonctionnement
 La première question à laquelle nous avons du repondre est : **Comment connaitre la direction de vent sans utilisé la premiere méthode ?** 
@@ -38,14 +39,16 @@ Pour les LEDs et photo-transistors il faut que ceux ci soit soudé au dos de la 
 
 
 ## Installation
-
+Préparer le modèle de la girouette physique avec le PCB à l'intérieur.
 
 ## Utilisation
 
 
 ## Petits défaut à améliorer pour le bon fonctionnement du projet
-
+- Les calles du PCB dans la boite ne sont pas exactement aligné, il faut la bloqué avec du scotch en exemple et la surélever pour que les LEDs/photo-transistors soient au niveau des trous pour laisser le passage des rayons;
+- Les valeurs theoriques recues par la carte sont différentes de la réalité, il faut donc réajuster les valeurs pour la bonne gestion de la direction de la girouette;
+- Les séparateurs peuvent être imprimés si ils y a trop d'interférence.
 
 ## Auteurs et remerciments
-
+Projet réalisé par DUEE-MOREAU Arwen et PELLETIER Ilane en classe ELSE4 cursus Polytech FISA 4 année sur le semestre 7 et 8 avec l'aide du professeur PETER Christian.
 
