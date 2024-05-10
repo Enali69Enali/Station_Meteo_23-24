@@ -21,7 +21,7 @@ Nous sommes donc partis sur une idée de CODE GRAY (1 bit se change à la fois) 
 ### Le projet physique
 Pour simuler le CODE GRAY, nous avons pensé à une idée de LED émettrices et photo-transitors récepteurs séparer par un tourniquet fait en impression 3D. Quand il y aura le passage d'un trou (pas de matiere), les photo-transitor recevront la lumière infrarouge. Sinon rien ne sera perçu.
 Voici les principales impressions 3D nécessaire pour le projet :
-* [Boite maintenant le PCB](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/modelisation_3D/boite.stl) (Attention dans le fichier .stl il manque un trou pour faire passer les câbles que nous avons rajoutés en en faisant un dans le fond de la boite avec un fer à souder. Pour les autres modifications regarder [ici](##-Petits-défaut-à-améliorer-pour-le-bon-fonctionnement-du-projet))
+* [Boite maintenant le PCB](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/modelisation_3D/boite.stl) (Attention dans le fichier .stl il manque un trou pour faire passer les câbles que nous avons rajoutés en en faisant un dans le fond de la boite avec un fer à souder. Pour les autres modifications regarder [ici](##Petits-défaut-à-améliorer-pour-le-bon-fonctionnement-du-projet))
 * [Couvercle](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/modelisation_3D/cylindre%20led-couvercle.stl) (Attention le PCB a un sens sinon celui ci ne passera pas avec le couvercle)
 * [Réajusteur pour le roulement](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/modelisation_3D/calle%20roulement.stl)
 * Fleche de la girouette nous avait été déja fournis
