@@ -46,7 +46,7 @@ Nous avons decidé pour nos tests que le N serait pointé à la position 0 0 0 0
 Lors du lancement du programme, celui ci retournera toutes les 15 secondes la direction de la girouette.
 
 ## Petits défaut à améliorer pour le bon fonctionnement du projet
-- Les calles du PCB dans la boite ne sont pas exactement aligné, il faut la bloqué avec du scotch en exemple et la surélever pour que les LEDs/photo-transistors soient au niveau des trous pour laisser le passage des rayons;
+- Les calles du PCB dans la boite ne sont pas exactement aligné, il faut la bloqué avec du scotch en exemple et la surélever pour que les LEDs/photo-transistors soient au niveau des trous pour laisser le passage des rayons. Conseil : si vous voulez résoudre ce soucis avant l'impression de la boite, vous devez surélever le fond de la boite de 2-3 mm;
 - Les valeurs theoriques recues par la carte sont différentes de la réalité, il faut donc réajuster les valeurs pour la bonne gestion de la direction de la girouette;
 - Les séparateurs peuvent être imprimés si ils y a trop d'interférence.
 
