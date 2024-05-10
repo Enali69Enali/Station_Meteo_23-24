@@ -42,7 +42,8 @@ Pour les LEDs et photo-transistors il faut que ceux ci soit soudé au dos de la 
 Préparer le modèle de la girouette physique avec le PCB à l'intérieur.
 
 ## Utilisation
-
+Nous avons decidé pour nos tests que le N serait pointé à la position 0 0 0 0 (tous les phototransistors ne recoivent pas de rayonnement des LEDs).
+Lors du lancement du programme, celui ci retournera toutes les 15 secondes la direction de la girouette.
 
 ## Petits défaut à améliorer pour le bon fonctionnement du projet
 - Les calles du PCB dans la boite ne sont pas exactement aligné, il faut la bloqué avec du scotch en exemple et la surélever pour que les LEDs/photo-transistors soient au niveau des trous pour laisser le passage des rayons;
