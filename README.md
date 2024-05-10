@@ -26,7 +26,7 @@ Voici les principales impressions 3D nécessaire pour le projet :
 * [Réajusteur pour le roulement](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/modelisation_3D/calle%20roulement.stl)
 * Fleche de la girouette nous avait été déja fournis
 
-Pour le montage, il suffit de collé le réajusteur pour le roulement sur la tige de la boite, puis de placé un roulement adapté pour emboité le couvecle et la boite. Les dimensions roulements doivent être de : diamètre extérieur 22mm, diamètre intérieur 8mm et diamètre de hauteur 7mm.
+Pour le montage, il suffit de collé le réajusteur pour le roulement sur la tige de la boite, puis de placé un roulement adapté pour emboité le couvecle et la boite. Les impressions sont fait pour des roulements aux dimensions de : diamètre extérieur 22mm, diamètre intérieur 8mm et diamètre de hauteur 7mm.
 
 En plus a été designé un cache pour séparer LEDs/ photo-transistors les uns des autres (voir [le rapport du jour 13/03 de PELLETIER](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/rapport_de_s%C3%A9ance/Rapport13_03_2024PELLETIER.pdf)). Ceux ci n'ont pas encore été testé.
 
@@ -43,7 +43,7 @@ Préparer le modèle de la girouette physique avec le PCB à l'intérieur.
 
 ## Utilisation
 Nous avons decidé pour nos tests que le N serait pointé à la position 0 0 0 0 (tous les phototransistors ne recoivent pas de rayonnement des LEDs).
-Lors du lancement du programme, celui ci retournera toutes les 15 secondes la direction de la girouette.
+Lors du lancement du programme, celui ci retournera toutes les 15 secondes la direction de la girouette. Le projet n'a pas encore été testé en rajoutant l'anémomètre.
 
 ## Petits défaut à améliorer pour le bon fonctionnement du projet
 - Les calles du PCB dans la boite ne sont pas exactement aligné, il faut la bloqué avec du scotch en exemple et la surélever pour que les LEDs/photo-transistors soient au niveau des trous pour laisser le passage des rayons. Conseil : si vous voulez résoudre ce soucis avant l'impression de la boite, vous devez surélever le fond de la boite de 2-3 mm;
