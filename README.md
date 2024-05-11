@@ -34,12 +34,21 @@ En plus a été designé un cache pour séparer LEDs/ photo-transistors les uns 
 #### Hardware
 Le [PCB](https://github.com/Enali69Enali/Station_Meteo_23-24/blob/master/BoardsEAGLE/R2R_v2.1.brd) contenant le réseau R2R doit être imprimés (si vous ne l'avez pas déjà) et ajouté avec chaque composant.
 Pour les LEDs et photo-transistors il faut que ceux ci soit soudé au dos de la carte avec la tete reposant sur le plastique du PCB pour être à la même hauteur tous, pour le passage dans le tourniquet soit synchronisé. 
+Les LED et phototransistors travaillent sur la même longueur d'onde, cad 940 nm (infrarouge). Les phototransistors sont utilisés en emmeteur commun avec un inverseur MOS à sa sortie afin d'avoir réellement 0 ou 3.3V et pas de valeurs entre pour le bon fonctionnement du réseau R2R. L'angle de réception des phototransistors a été choisi le plus petit possible (et disponible), cad 28º, afin de limiter le plus possible les parasites des autre leds.
 
 #### Software
-
+Un fois téléversé, le programme rentre en light sleep et se réveille toute les 15 secondes (ou si reception d'une goutte de pluie), ce
+qui permet d'obtenir la position de la girouette
+Il y a 16 position differentes, Ouest etant la plus petite, tous les phototransistors recevant tous de la lumière et Nord etant la plus grande, tous les transistors etant cachés.
+Actuellement, le valeurs sont complètement à refaire: la courbe n'étant pas linéaire et les valeurs ayant été déterminées avec le PCB de test, les écarts entre les valeurs sont trop grand et les résultats étaient au final mieux que prévu.
+Le code de la girouette reste extrêmement simple, etant juste un else-if
 
 ## Installation
 Préparer le modèle de la girouette physique avec le PCB à l'intérieur.
+Il faut brancher le cable micro USB à l'ordinateur pour pouvoir téléverser le code mais voir aussi les informations envoyées par la girouette
+Ensuite il faut alimenter la girouette en 3.3V: le fil rouge doit être branché au 3.3V et le fil noir au GND.
+Pour vérifier que le montage fonctionne bien, environs 170 mA sont "consommés" par notre montage et sont donc visible sur le générateur
+de tension
 
 ## Utilisation
 Nous avons decidé pour nos tests que le N serait pointé à la position 0 0 0 0 (tous les phototransistors ne recoivent pas de rayonnement des LEDs).
