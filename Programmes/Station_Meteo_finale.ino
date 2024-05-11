@@ -107,7 +107,7 @@ void setup() {
   print_wakeup_reason();
 
   /*  First we configure the wake up source  We set our ESP32 to wake up every 5 seconds  We set our ESP32 to wake up every rain interruption  */
-  esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
+  esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP/10.0 * uS_TO_S_FACTOR);
   Serial.println("Setup ESP32 to sleep for every " + String(TIME_TO_SLEEP) +
   " Seconds");
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_32, 0);
@@ -129,7 +129,13 @@ void lecture_donnee() {
   girouette();
   //Toutes les secondes
   currentTime_P = currentTime_P + millis();
-  if (currentTime_P - startTime_P >= period_P)//test whether the period has elapsed
+  Serial.println("currentTime_P - startTime_P: ");
+  Serial.print(currentTime_P - startTime_P);
+  Serial.print(" \n");
+  Serial.println("period_P: ");
+  Serial.print(period_P);
+  Serial.print(" \n");
+  if (currentTime_P - startTime_P >= period_P*100 /*temporary*/)//test whether the period has elapsed
   { 
     Serial.print("\n-------------------------------------\n");
     //Pluviomètre
